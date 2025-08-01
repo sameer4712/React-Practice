@@ -1,13 +1,12 @@
-import Header from "./header.jsx"
-import Footer from "./footer.jsx"
+import Student from "./students.jsx"
 
 
 function App() {
   return (
-    <>
-      <Header />
-      <Footer />
-      </>
+      <div>
+         <Student name="sameer" Age='30'/>
+      </div>
+     
       
 
   )

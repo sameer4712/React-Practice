@@ -3,16 +3,16 @@
 function Header(){
    return(
     <header>
-        <h1>My website</h1>
+        <h1 className="Head">My website</h1>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
+            <ul className="list">
+                <li ><a href="#" className="hii">Home</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
         </nav>
-        <hr />
+        <hr className="simple"/>
     </header>
    );
 }
