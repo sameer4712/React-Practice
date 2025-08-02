@@ -1,14 +1,12 @@
-import Student from "./students.jsx"
+import  "./index.css"
+import Home from "./pages/Home"
 
 
 function App() {
-  return (
-      <div>
-         <Student name="sameer" Age='30' isStudent={false}/>
-      </div>
-     
-      
-
-  )
+ return(
+  <>
+   <Home />
+  </>
+ )
 }
 export default App

@@ -1,9 +1,9 @@
-.student{
-  height: 100vh;
+.movie-grid{
   display: flex;
-  justify-content: center;
-  align-items:center;
-  flex-direction: column;
+  margin-top: 5.3rem;
+  gap: 3.3rem;
+}
 
-  
+.search-form{
+  margin-top: 2rem;
 }
