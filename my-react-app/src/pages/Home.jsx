@@ -23,6 +23,7 @@ function Home() {
                     value={search} onChange={(e) => searchUpdate(e.target.value)} />
                 <button className="button-search"> Search</button>
             </form>
+                
             <div className="movie-grid" >
                 {movies.map(
                     (movie) =>
