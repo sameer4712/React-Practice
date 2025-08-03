@@ -17,18 +17,13 @@ function Home() {
         alert(search)
     }
     return (
+        
         <div className="Home">
             <form onSubmit={handleSearch} className="search-form">
                 <input type="text" placeholder="search for movies..." className="search"
                     value={search} onChange={(e) => searchUpdate(e.target.value)} />
                 <button className="button-search"> Search</button>
             </form>
-<<<<<<< HEAD
-
-
-            
-=======
->>>>>>> a1cc46b419889f66ddd9b95a29781628efbd0b29
                 
             <div className="movie-grid" >
                 {movies.map(
