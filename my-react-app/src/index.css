@@ -21,6 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color:blue;
 }
 .button-search{
   padding: 0.6em;
