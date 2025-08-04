@@ -30,7 +30,7 @@ function Home() {
                     (movie) =>
                         movie.title.toLowerCase().startsWith(search) &&
                         (
-                            <MovieCard movie={movie} key={movie.id}
+                            <MovieCard movie={movie} key={movie._id}
                             />)
                 )}
             </div>
