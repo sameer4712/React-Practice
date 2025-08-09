@@ -15,6 +15,9 @@
   height:4.5rem;
 
 }
+body{
+  align-items: center;
+}
 
 .search-form{
   display: flex;
@@ -27,4 +30,87 @@
 }
 .search{
   padding: 0.5rem;
+}
+
+.todo{
+
+  font-family: serif;
+  text-align: center;
+  margin-top: 200px;
+  border: 2px solid black;
+  width: 700px;
+}
+h1{
+  font-size: 60px;
+}
+button{
+  padding: 10px 10px;
+  font-size: 1rem;
+  border:none;
+  cursor:pointer;
+  transition: background-color 0.5 ease;;
+}
+.addbutton{
+  width: 70px;
+  padding: 10px;
+  height: 50px;
+  background-color: rgb(33, 164, 33);
+  border-radius: 2px;
+}
+.addbutton:hover{
+  background-color: rgb(50, 205, 50);
+  transition: all;
+  transition: ease-in-out;
+}
+
+.delete{
+  background-color: rgb(200, 48, 48);
+  border-radius: 2px;
+}
+.delete:hover{
+  background-color: rgb(159, 15, 15);
+  transition: all;
+  transition: ease-in-out;
+}
+
+.moves{
+  background-color: rgb(105, 154, 239);
+  border-radius: 2px;
+}
+.moves:hover{
+  background-color: rgb(22, 89, 160);
+  transition: all;
+  transition: ease-in-out;
+}
+li{
+  display: flex;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  border: 2px solid;
+  padding: 10px;
+  width: 500px;
+  margin-left: 50px;
+
+
+}
+
+input[type="text"]
+{
+  margin-left: 30px;
+  font-size: 1.4rem;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  
+}
+.item{
+  display: flex;
+  justify-content: center;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  
 }
