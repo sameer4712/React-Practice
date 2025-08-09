@@ -13,7 +13,8 @@ function MovieCard({ movie }) {
                 <img src={movie.url} alt={movie.title} />
                 <button className="favorite" onClick={fav}>🤍</button>
             </div>
-            <div className="movie-info">
+            <div className="movie-info w-[200px]">
+                <img src={movie.image} className="w-[200px] h-[100px]"/>
                 <h3>{movie.title}</h3>
                 <p>{movie.release_date}</p>
             </div>
