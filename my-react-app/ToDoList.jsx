@@ -1,21 +1,26 @@
 import { useState } from "react"
 
 function ToDoList() {
-    const [Task, SetTask] = useState(["Eat Dinner","Study Hard"])
+    
+    const [Task, SetTask] = useState(["Eat Dinner", "Study Hard"])
     const [NewTask, SetNewTask] = useState('')
+
     function handleTask(event) {
         SetNewTask(event.target.value)
     }
+
     function AddTask() {
         if (NewTask.trim() !== "")
             SetTask(t => [...t, NewTask]);
         SetNewTask("")
     }
+
     function DeleteTask(index) {
         const updatedTask = Task.filter((_, i) => i !== index)
         SetTask(updatedTask)
 
     }
+
     function MoveUp(index) {
         if (index > 0) {
             const updatedTask = [...Task];
@@ -24,6 +29,7 @@ function ToDoList() {
         }
 
     }
+
     function MoveDown(index) {
         if (index < Task.length - 1) {
             const updatedTask = [...Task];
@@ -40,13 +46,13 @@ function ToDoList() {
                     <input type="text" placeholder="Enter a new Task......" value={NewTask} onChange={handleTask} />
                     <button onClick={AddTask} className="addbutton"> Add</button>
                 </div>
-                <ol >
+                <ol>
                     {Task.map((item, index) =>
                         <li key={index}>
                             <span>{item}</span>
-                                <button onClick={() => DeleteTask(index)} className="delete">Delete</button>
-                                <button onClick={() => MoveUp(index)} className="moves">UP</button>
-                                <button onClick={() => MoveDown(index)} className="moves">DOWN</button>
+                            <button onClick={() => DeleteTask(index)} className="delete">Delete</button>
+                            <button onClick={() => MoveUp(index)} className="moves">UP</button>
+                            <button onClick={() => MoveDown(index)} className="moves">DOWN</button>
                         </li>
                     )}
                 </ol>

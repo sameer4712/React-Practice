@@ -72,6 +72,7 @@ span{
 .delete{
   background-color: rgb(241, 21, 21);
   border-radius: 2px;
+  font-size: 1.2rem;
 }
 .delete:hover{
   background-color: rgb(159, 15, 15);
@@ -80,8 +81,9 @@ span{
 }
 
 .moves{
-  background-color: rgb(105, 154, 239);
+  background-color: rgb(89, 145, 240);
   border-radius: 2px;
+  font-size: 1.2rem;
 }
 .moves:hover{
   background-color: rgb(22, 89, 160);
@@ -110,6 +112,7 @@ input[type="text"]
   font-size: 1.4rem;
   padding: 20px 20px;
   margin-bottom: 20px;
+  outline: none;
   
 }
 .item{
