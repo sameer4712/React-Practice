@@ -1,9 +1,17 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function ToDoList() {
 
     const [Task, SetTask] = useState(["Eat Dinner", "Study Hard"])
     const [NewTask, SetNewTask] = useState('')
+    const [count, setcount] = useState(0)
+
+    useEffect(() => {
+        const idea = setInterval(() => {
+            setcount((c) => c + 1)
+        }, 1000)
+        return () => (clearInterval(idea))
+    }, [])
 
     function handleTask(event) {
         SetNewTask(event.target.value)
@@ -41,13 +49,14 @@ function ToDoList() {
     return (
 
         <div className="main">
+            <h1>{count} </h1>
             <div className=" todo" >
                 <h1>To Do List</h1>
                 <div className="item">
 
                     <input type="text" placeholder="Enter a new Task......" value={NewTask} onChange={handleTask} />
                     <button onClick={AddTask} className="addbutton"> Add</button>
-                    
+
                 </div>
 
                 <ol>

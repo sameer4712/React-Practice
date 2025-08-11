@@ -4,6 +4,8 @@ import "./index.css"
 // import Fav from "./pages/Favorites.jsx"
 // import NavBar from "./components/NavBar.jsx"
 import ToDoList from "../ToDoList.jsx"
+// import MovieCard from "./components/movieCard.jsx"
+import Exam from "../exam.jsx"
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         < Route path="/favorites" element={<Fav />} />
       </Routes>
     </main> */}
+    <Exam/>
+    <Exam />
     </div>
   )
 }
