@@ -1,6 +1,6 @@
 
-function Student(props){
-    return(
+function Student(props) {
+    return (
         <div className="student">
             <h1>name: {props.name}</h1>
             <p>Age: {props.Age}</p>
